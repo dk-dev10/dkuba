@@ -1,0 +1,16 @@
+@import '../../../style/var.scss';
+
+.btn {
+  padding: 13px 100px;
+  @include neubrutalismBlock;
+  background-color: $purple;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+
+  &White {
+    background-color: #fff;
+    color: #000;
+  }
+}

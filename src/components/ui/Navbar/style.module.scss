@@ -1,0 +1,44 @@
+@import '../../../style/var.scss';
+
+.nav {
+  width: 100%;
+  border-bottom: 1px solid #000;
+  background: #fff;
+  position: fixed;
+  top: 0;
+
+  &Block {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    align-items: center;
+
+    button {
+      background: none;
+      border: none;
+      font-size: 18px;
+      font-weight: 600;
+      cursor: pointer;
+      color: #000;
+    }
+  }
+
+  &List {
+    display: flex;
+  }
+}
+
+.navItem {
+  color: #000;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+
+  & + & {
+    margin-left: 50px;
+  }
+
+  &Active {
+    color: $purple;
+  }
+}

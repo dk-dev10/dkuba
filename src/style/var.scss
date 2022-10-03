@@ -1,0 +1,13 @@
+$purple: #5b4af2;
+$black: #000;
+$gray: #808080;
+
+$fontM: 'Montserrat', sans-serif;
+$fontMA: 'Montserrat Alternates', sans-serif;
+
+@mixin neubrutalismBlock {
+  background: #ffffff;
+  border: 2px solid #000000;
+  box-shadow: 5px 5px 0px #000000;
+  border-radius: 20px;
+}

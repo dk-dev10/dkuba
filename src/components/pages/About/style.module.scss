@@ -1,0 +1,35 @@
+.about {
+  width: 100%;
+
+  &Inner {
+    width: 75%;
+  }
+}
+
+.sectionTitle {
+  color: #5b4af2;
+  text-shadow: 3px 3px 0px #000000;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 35px;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+
+  margin-bottom: 40px;
+}
+
+.aboutText {
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 32px;
+
+  u {
+    font-weight: 500;
+  }
+
+  span, a {
+    font-weight: 500;
+    color: #5b4af2;
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,14 @@
+@import './reset';
+
+.container {
+  display: block;
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.section {
+  padding-top: 50px;
+  min-height: 100vh;
+  width: 100%;
+}
