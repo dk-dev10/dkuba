@@ -7,7 +7,7 @@ export default function App() {
   return (
     <div className='app'>
       <Navbar />
-      <div style={{ height: '150vh' }}>
+      <div>
         <Home />
         <About />
       </div>

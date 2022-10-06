@@ -2,6 +2,7 @@ import classNames from 'classnames/bind';
 
 import st from './style.module.scss';
 import mn from '../../../style/main.module.scss';
+import WorkCard from '../../ui/WorkCard/workCard';
 const cn = classNames.bind(st);
 
 const About = () => {
@@ -46,7 +47,22 @@ const About = () => {
             Английский, если хочешь что-то выучить, применяй это на практике.
           </p>
         </div>
-        <div></div>
+        <div className={cn('aboutWhyMe', 'aboutInner')}>
+          <h2 className={cn('sectionTitle')}>Сильные черты:</h2>
+          <ul>
+            <li>Обучаемость</li>
+            <li>Не допускаю одну ошибку дважды</li>
+            <li>Остаюсь с холодной головой при хаосе</li>
+            <li>Командный игрок, могу и в соло</li>
+            <li>и т.д. а то устанешь читать😁</li>
+          </ul>
+        </div>
+        <div className={cn('aboutWorks')}>
+          <h2 className={cn('sectionTitle')}>Опыт работы</h2>
+          <div className={cn('workLine')}>
+            <WorkCard  />
+          </div>
+        </div>
       </div>
     </section>
   );

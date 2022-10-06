@@ -1,0 +1,7 @@
+@import '../../../style/var.scss';
+
+.workCard {
+  @include neubrutalismBlock;
+  width: 30%;
+  padding: 10px;
+}

@@ -1,5 +1,9 @@
 @import './reset';
 
+body {
+  padding-bottom: 100px;
+}
+
 .container {
   display: block;
   max-width: 1280px;
