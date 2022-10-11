@@ -1,0 +1,76 @@
+@import '../../../style/var.scss';
+
+.sectionTitle {
+  color: #5b4af2;
+  text-shadow: 3px 3px 0px #000000;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 35px;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+
+  margin-bottom: 40px;
+}
+
+.skillsSection {
+  p {
+    // font-family: 'Montserat', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+  }
+}
+
+.warning {
+  width: 50%;
+  position: relative; 
+
+
+  span {
+    font-size: 30px;
+    font-weight: 900;
+    color: red;
+  }
+}
+
+.skills {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.skillItem {
+  width: 12%;
+  height: 200px;
+  padding: 15px 15px 10px;
+  text-align: center;
+  @include neubrutalismBlock;
+  margin: 15px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .imgBlock {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    max-height: 80%;
+    height: 80%;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  p {
+    font-size: 16px;
+
+    &::first-letter {
+      text-transform: uppercase;
+    }
+  }
+}

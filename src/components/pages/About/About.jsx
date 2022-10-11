@@ -1,8 +1,9 @@
 import classNames from 'classnames/bind';
 
+import WorkCard from '../../ui/WorkCard/workCard';
+
 import st from './style.module.scss';
 import mn from '../../../style/main.module.scss';
-import WorkCard from '../../ui/WorkCard/workCard';
 const cn = classNames.bind(st);
 
 const About = () => {
@@ -60,6 +61,9 @@ const About = () => {
         <div className={cn('aboutWorks')}>
           <h2 className={cn('sectionTitle')}>Опыт работы</h2>
           <div className={cn('workLine')}>
+            <WorkCard  />
+            <WorkCard  />
+            <WorkCard  />
             <WorkCard  />
           </div>
         </div>
