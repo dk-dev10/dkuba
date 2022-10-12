@@ -8,11 +8,11 @@ const cn = classNames.bind(st);
 
 const Home = () => {
   return (
-    <section className={cn('home', mn.section)}>
+    <section id='home' className={cn('home', mn.section)}>
       <div className={mn.container}>
         <div className={cn('homeInfo')}>
           <h1>
-            Привет! <br /> Меня зовут <span>KuBa</span>, <br />Я {' '}
+            Привет! <br /> Меня зовут <span>KuBa</span>, <br />Я{' '}
             <span>front-end</span> разработчик.
           </h1>
           <p>с опытом более 1 года</p>

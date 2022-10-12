@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-scroll';
 
 import classNames from 'classnames/bind';
 import st from './style.module.scss';
@@ -6,24 +6,54 @@ import main from '../../../style/main.module.scss';
 const cn = classNames.bind(st);
 
 const Navbar = () => {
-  const style = ({ isActive }) => cn('navItem', { navItemActive: isActive });
   return (
     <nav className={cn('nav')}>
       <div className={cn(main.container)}>
         <div className={cn('navBlock')}>
           <div className={cn('navList')}>
-            <NavLink to='/' className={style} end>
+            <Link
+              to='home'
+              className={st.navItem}
+              activeClass={st.navItemActive}
+              spy={true}
+              smooth={true}
+              duration={500}
+            >
               Главная
-            </NavLink>
-            <NavLink to='about' className={style}>
+            </Link>
+            <Link
+              to='about'
+              className={st.navItem}
+              activeClass={st.navItemActive}
+              spy={true}
+              smooth={true}
+              duration={500}
+              // offset={-2}
+            >
               Обо мне
-            </NavLink>
-            <NavLink to='skills' className={style}>
+            </Link>
+            <Link
+              to='skills'
+              className={st.navItem}
+              activeClass={st.navItemActive}
+              spy={true}
+              smooth={true}
+              duration={500}
+              // offset={-2}
+            >
               Навыки
-            </NavLink>
-            <NavLink to='projects' className={style}>
+            </Link>
+            <Link
+              to='projects'
+              className={st.navItem}
+              activeClass={st.navItemActive}
+              spy={true}
+              smooth={true}
+              duration={500}
+              // offset={}
+            >
               Проекты
-            </NavLink>
+            </Link>
           </div>
           <button>Связаться</button>
         </div>

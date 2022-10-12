@@ -40,7 +40,7 @@ const Skills = () => {
   ];
 
   return (
-    <section className={cn('skillsSection', mn.section)}>
+    <section id='skills' className={cn('skillsSection', mn.section)}>
       <div className={mn.container}>
         <h2 className={cn('sectionTitle')}>Навыки</h2>
         <div className={cn('skills')}>

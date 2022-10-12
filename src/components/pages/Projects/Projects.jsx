@@ -15,7 +15,7 @@ const Projects = () => {
   ];
 
   return (
-    <section className={cn('about', mn.section)}>
+    <section id='projects' className={cn('projectSection', mn.section)}>
       <div className={mn.container}>
         <h2 className={cn('sectionTitle')}>Проекты</h2>
 

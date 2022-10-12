@@ -8,7 +8,7 @@ const cn = classNames.bind(st);
 
 const About = () => {
   return (
-    <section className={cn('about', mn.section)}>
+    <section id='about' className={cn('about', mn.section)}>
       <div className={mn.container}>
         <div className={cn('aboutInner')}>
           <h2 className={cn('sectionTitle')}>Обо мне</h2>
